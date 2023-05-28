@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --DesaturatedRed: hsl(0, 36%, 70%);
+    --DesaturatedRed2: hsl(0, 32%, 88%);
+    --SoftRed: hsl(0, 93%, 68%);
+    --DarkGrayishRed: hsl(0, 6%, 24%);      
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.hero img{
+    width: 100%;
+    overflow: hidden;
+}
+
+header img{
+    margin: 26px 39px;
+    width: 100px;
+}
+
+main{
+    padding: 30px 10px ;
+    text-align: center;
+    justify-content: center;
+}
+
+main h1{
+    text-transform: uppercase;
+    color: var(--DesaturatedRed);
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 8px;
+    display: block;
+}
+
+main span{
+    
+    color: var(--DarkGrayishRed);
+    font-weight: 600;
+    display: block;
+    padding: 0px 40px;
+
+}
+
+main p{
+    color: var(--DesaturatedRed);
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 0px 24px;
+    width: 90%;
+    line-height: 1.5;
+    margin-bottom: 45px;
+
+}
+
+input[type=email]{
+    border: 1px solid var(--DesaturatedRed);
+    border-radius: 30px;
+    padding: 16px 10px;
+    width: 80%;
+    outline: none;
+}
+
+
+::placeholder {
+    color: var(--DesaturatedRed);
+
+}
+
+button{
+    position: absolute;
+    padding: 16px 10px;
+    border-radius: 30px;
+    border: none;
+    width: 80px;
+    right: 20px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+
+button:hover {
+    background-image: linear-gradient(135deg,  hsl(0, 43%, 86%), hsl(0, 28%, 80%));
+    cursor: pointer;
+}
+
+button:active {
+  
+ 
+    box-shadow: rgba(73, 73, 82, 0.568) 0px 7px 29px 0px;
+  transform: translateX(3px);
+}
+
+
+@media only screen and (min-width: 768px){
+
+    body{
+        background-color: var(--DesaturatedRed2);
+    }
+
+    header img{
+        position: absolute;
+        top: 90px;
+        left: 230px;
+       
+        width: 108px;
+    }
+    
+
+.flex-card{
+    background-color: white;
+    display: flex;   
+    flex-direction: row-reverse;
+    width: 912px;
+    height: 511px;
+    margin: 84px auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+   
+}
+
+.hero img {
+    height: 511px;
+    width: 378px;
+}
+
+main{
+    
+    text-align: left;
+    padding: 10px 10px 10px 90px;
+    width: 560px;
+}
+main h1{
+    
+    margin-top: 118px;
+}
+
+main span{
+    padding: 0px 0px;
+   
+}
+main p{
+    padding: 0px 0px;
+    font-size: .9rem;
+
+}
+
+input[type=email]{
+   
+    padding: 11px 7px;
+    width: 50%;
+
+}
+
+button {
+   
+    padding: 8px 0px;
+    width: 67px;
+    left: 454px;
+
+}
+
+
+}
